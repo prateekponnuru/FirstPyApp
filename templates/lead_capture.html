@@ -1,0 +1,122 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MyFirstApp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  	
+  </style>
+</head>
+<body>
+<div class="container">
+<form action="/create_lead" method="POST">
+<div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input id="nme" type="text" class="form-control" name="nme" placeholder="Name">
+</div>
+</br>
+<div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input id="email" type="email" class="form-control" name="email" placeholder="EMail">
+</div>
+</br>
+<div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input id="mobile" type="phone" class="form-control" name="mobile" placeholder="Phone">
+</div>
+</br>
+<label class="radio-inline"><input type="radio" name="gender">Male</label>
+<label class="radio-inline"><input type="radio" name="gender">Female</label>
+<label class="radio-inline"><input type="radio" name="gender">Others</label> 
+<label class="radio-inline"><input type="radio" name="gender">Prefer Not To Say</label> 
+</br>
+<div class="form-group">
+      <label for="HighestQualification">Highest Qualification:</label>
+      <select class="form-control" id="HighestQualification">
+    <option value="I">B.E.</option>
+    <option value="II">B.Tech</option>
+    <option value="III">M.Tech</option>
+    <option value="IV">BSC</option>
+    <option value="V">MSC</option>
+      </select>
+</div>
+<label class="checkbox-inline"><input type="checkbox" value="comptrBkgrnd">Background in Computers</label>
+<div class="checkbox">
+  <label><input type="checkbox" value="working">Working Professional</label>
+</div>
+<div class="form-group">
+      <label for="exp">Experience:</label>
+      <select class="form-control" id="exp">
+  	<option value="VIII"> Prefer to not Say</option>
+    <option value="I"> less than 1</option>
+    <option value="II"> 1-3</option>
+    <option value="III"> 3-5</option>
+    <option value="IV"> 6-8</option>
+    <option value="V"> 8-10</option>
+    <option value="VI"> 10-12</option>
+    <option value="VII"> 12+</option>
+      </select>
+</div>
+
+<div class="form-group">
+      <label for="earn">Earnings:</label>
+      <select class="form-control" id="earn">
+  	<option value="VIII">Prefer to not Say</option>
+    <option value="I">less than 2.5 Lakh</option>
+    <option value="II">2.5 - 5 Lakh</option>
+    <option value="III">5 - 8 Lakh</option>
+    <option value="IV">8 - 10 Lakh</option>
+    <option value="V">10 - 12 Lakh</option>
+    <option value="VI">12 - 15 Lakh</option>
+    <option value="VII">15+</option>
+      </select>
+</div>
+
+<div class="form-group">
+      <label for="InterestedIn">Interested In:</label>
+      <select class="form-control" id="InterestedIn">
+    <option value="CloudC"> Cloud Computing</option>
+    <option value="IOT"> IOT</option>
+    <option value="DataSci"> Data Science</option>
+    <option value="BigD"> Big Data</option>
+    <option value="Counciling"> Counciling</option>
+      </select>
+</div>
+
+<div class="form-group">
+      <label for="Time2Join">When do you see yourself joining?:</label>
+      <select class="form-control" id="Time2Join">
+    <option value="IV"> Immediately</option>
+    <option value="I"> in less than a month</option>
+    <option value="II"> in a Couple of months</option>
+    <option value="III"> Not decided yet</option>
+      </select>
+</div>
+
+<button type="submit" class="btn btn-info" data-toggle="modal" data-target="#result">Submit</button>
+ <div class="modal fade" id="result" role="dialog">
+    <div class="modal-dialog">
+          <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>     
+    </div>
+ </div>
+</div>
+</form>
+</div>
+</body>
+</html>
